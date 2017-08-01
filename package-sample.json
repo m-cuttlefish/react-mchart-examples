@@ -5,13 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "opn http://localhost:10000/index.js && gojs . -p 10000"
+    "start": "gojs .",
+    "build": "gojs -b index.js"
   },
   "keywords": [],
   "author": "moyuyc",
   "license": "MIT",
-  "devDependencies": {
-    "opn-cli": "^3.1.0"
+  "devDependencies": {},
+  "dependencies": {
+    "go-js": "^1.0.8"
   },
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-cuttlefish/react-mchart-examples.git"
+  },
+  "bugs": {
+    "url": "https://github.com/m-cuttlefish/react-mchart-examples/issues"
+  },
+  "homepage": "https://github.com/m-cuttlefish/react-mchart-examples#readme"
 }
