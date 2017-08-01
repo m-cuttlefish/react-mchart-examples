@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "opn http://localhost:10000/index.js && gojs . -p 10000"
+    "start": "gojs .",
+    "reset": "/bin/rm -rf node_modules/ && /bin/rm -rf .happypack/; /bin/rm package-lock.json; cp package-sample.json package.json",
+    "postinstall": "npm start",
+    "build": "gojs -b index.js"
   },
   "keywords": [],
   "author": "moyuyc",
   "license": "MIT",
   "devDependencies": {
-    "opn-cli": "^3.1.0"
+    "go-js": "^1.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

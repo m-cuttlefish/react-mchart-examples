@@ -6,21 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gojs .",
+    "reset": "/bin/rm -rf node_modules/ && /bin/rm -rf .happypack/; /bin/rm package-lock.json; cp package-sample.json package.json",
+    "postinstall": "npm start",
     "build": "gojs -b index.js"
   },
   "keywords": [],
   "author": "moyuyc",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "go-js": "^1.1.0"
+  },
   "dependencies": {
-    "go-js": "^1.0.8"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/m-cuttlefish/react-mchart-examples.git"
-  },
-  "bugs": {
-    "url": "https://github.com/m-cuttlefish/react-mchart-examples/issues"
-  },
-  "homepage": "https://github.com/m-cuttlefish/react-mchart-examples#readme"
+  }
 }
